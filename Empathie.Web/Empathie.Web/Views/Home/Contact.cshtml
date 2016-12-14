@@ -1,16 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Contact Us";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+   
 }
-
 <!--Page Title-->
 <section class="page-title" style="background-image:url(@Url.Content("~/Content/mytemplate/")images/background/bg-page-title-1.jpg);">
     <div class="auto-container">
         <h1>Contact Us</h1>
         <div class="bread-crumb-outer">
             <ul class="bread-crumb clearfix">
-                <li><a href="index-2.html">Home</a></li>
+                <li>@Html.ActionLink("Home", "Index")</li>
                 <li class="active">Contact Us</li>
             </ul>
         </div>

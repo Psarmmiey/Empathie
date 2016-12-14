@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    @* my template headers*@
+    <title>Empathie - @ViewBag.Title</title>
+    
     <!-- Stylesheets -->
     <link href="@Url.Content("~/Content/mytemplate/")css/bootstrap.css" rel="stylesheet">
     <link href="@Url.Content("~/Content/mytemplate/")css/revolution-slider.css" rel="stylesheet">
@@ -77,12 +77,8 @@
 
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown">
-                                        <a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="index-2.html">Homepage One</a></li>
-                                            <li><a href="index-3.html">Homepage Two</a></li>
-                                        </ul>
+                                    <li>
+                                        @Html.ActionLink("Home", "Index")
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">About Us</a>
@@ -113,8 +109,6 @@
                                             <li>@Html.ActionLink("Donate Now", "Donate")</li>
                                             <li>@Html.ActionLink("Volunteer", "Volunteer")</li>
                                             <li>@Html.ActionLink("FAQS", "FAQS")</li>
-                                            <li>@Html.ActionLink("404", "ErrorPage")</li>
-
                                         </ul>
                                     </li>
                                     <li>@Html.ActionLink("Gallery", "Gallery")</li>
@@ -139,7 +133,6 @@
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->
-
                     </div><!--Nav Outer End-->
                     <!-- Hidden Nav Toggler -->
                     <div class="nav-toggler">
@@ -152,6 +145,7 @@
 
     </header>
     <!--End Main Header -->
+
     <!-- Hidden Navigation Bar -->
     <section class="hidden-bar right-align">
 
@@ -238,11 +232,13 @@
 
         </div><!-- / Hidden Bar Wrapper -->
     </section>
-    <!-- / Hidden Bar -->
+    <!-- End Hidden Bar -->
     <!--End pagewrapper-->
+
     <div>
         @RenderBody()
     </div>
+
     <!--Main Footer-->
     <footer class="main-footer">
         <div class="auto-container">
@@ -370,6 +366,8 @@
             </div>
         </div>
     </footer>
+    <!--End Main Footer-->
+    
     <script src="@Url.Content("~/Content/mytemplate/")js/jquery.js"></script>
     <script src="@Url.Content("~/Content/mytemplate/")js/bootstrap.min.js"></script>
     <script src="@Url.Content("~/Content/mytemplate/")js/jquery.mCustomScrollbar.concat.min.js"></script>

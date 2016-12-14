@@ -1,7 +1,6 @@
 ﻿
 @{
     ViewBag.Title = "Volunteer";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
  <!--Page Title-->
@@ -10,14 +9,13 @@
         <h1>Volunteer</h1>
         <div class="bread-crumb-outer">
             <ul class="bread-crumb clearfix">
-                <li><a href="index-2.html">Home</a></li>
+                <li>@Html.ActionLink("Home", "Index")</li>
                 <li><a href="#">Pages</a></li>
                 <li class="active">Volunteer</li>
             </ul>
         </div>
     </div>
 </section>
-
 
 <!--Volunteer Section-->
 <section class="volunteer-section">
@@ -28,7 +26,7 @@
             <div class="content-column col-md-7 col-sm-6 col-xs-12">
                 <div class="inner-box">
                     <div class="bold-text">Chew foot tuxedo cats always looking dapper fall asleep on the washing machine and give attitude ears back wide eyed while you're using the keyboard.</div>
-                    <figure class="image-box"><img src="images/resource/featured-image-16.jpg" alt=""></figure>
+                    <figure class="image-box"><img src="@Url.Content("~/Content/mytemplate/")images/resource/featured-image-16.jpg" alt=""></figure>
                     <div class="text">Attack feet meow for food, then when human fills food dish, take a few bites of food and continue meowing or lick the other cats for sleep nap caticus cuteicus so tuxedo cats always looking dapper asdflkjaertvlkjasntvkjn (sits on keyboard). Please stop looking at your phone and pet me rub face on owner for have secret plans but run outside as soon as door open jump off balcony, onto stranger's head chase mice, but hunt anything that moves. Burrow under covers i am the best. Lick butt and make a weird face soft kitty warm kitty little ball of furr or walk on car leaving trail of paw prints on hood and windshield for paw at your fat belly. All of a sudden cat goes crazy kitty power! paw at your fat belly intrigued by the shower human give me attention meow. </div>
                 </div>
             </div>
