@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "Events";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <!--Page Title-->
+<section class="page-title" style="background-image:url(@Url.Content("~/Content/mytemplate/")images/background/bg-page-title-1.jpg);">
+    <div class="auto-container">
+        <h1>Events</h1>
+        <div class="bread-crumb-outer">
+            <ul class="bread-crumb clearfix">
+                <li><a href="index-2.html">Home</a></li>
+                <li class="active">Events</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--Sidebar Page-->
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Content Side-->
+            <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+                <!--Events Section-->
+                <section class="events-section">
+
+                    <!--Default Event Box-->
+                    <div class="default-event-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="single-event.html"><img src="@Url.Content("~/Content/mytemplate/")images/resource/featured-image-17.jpg" alt=""></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <div class="post-header clearfix">
+                                    <div class="pull-left">
+                                        <h3><a href="single-event.html">FEED A HUNGRY CHILD</a></h3>
+                                        <ul class="post-meta clearfix">
+                                            <li><a href="#"><span class="icon fa fa-map-marker"></span> Niegeria</a></li>
+                                            <li><a href="#"><span class="icon fa fa-clock-o"></span> 5.00 pm - 7.30 pm</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="event-date">
+                                            <span class="date-box">Aug</span><span class="date-box">08</span><span class="date-box">2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. </div>
+                                <div class="link-box"><a href="single-event.html"><span class="fa fa-angle-double-right"></span> Read More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Default Event Box-->
+                    <div class="default-event-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="single-event.html"><img src="@Url.Content("~/Content/mytemplate/")images/resource/featured-image-18.jpg" alt=""></a></figure>
+                            </div>
+                            <div class="lower-content">
+                                <div class="post-header clearfix">
+                                    <div class="pull-left">
+                                        <h3><a href="single-event.html">Charity Marathon</a></h3>
+                                        <ul class="post-meta clearfix">
+                                            <li><a href="#"><span class="icon fa fa-map-marker"></span> London</a></li>
+                                            <li><a href="#"><span class="icon fa fa-clock-o"></span> 6.00 am - 10.30 pm</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="event-date">
+                                            <span class="date-box">Sep</span><span class="date-box">16</span><span class="date-box">2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. </div>
+                                <div class="link-box"><a href="single-event.html"><span class="fa fa-angle-double-right"></span> Read More</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Styled Pagination -->
+                <div class="styled-pagination">
+                    <ul>
+                        <li><a class="prev" href="#"><span class="fa fa-angle-double-left"></span></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a class="next" href="#"><span class="fa fa-angle-double-right"></span></a></li>
+                    </ul>
+                </div>
+
+            </div><!--End Content Side-->
+            <!--Sidebar-->
+            <div class="sidebar-side col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <aside class="sidebar">
+
+                    <!-- Search Form -->
+                    <div class="widget search-box sidebar-widget">
+                        <div class="sidebar-title"><h3>Search</h3></div>
+                        <form method="post" action="http://wp1.themexlab.com/html2/preview-human-welfare/blog.html">
+                            <div class="form-group">
+                                <input type="search" name="search-field" value="" placeholder="Search the Events">
+                                <button type="submit"><span class="icon fa fa-search"></span></button>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <!-- Popular Categories -->
+                    <div class="widget popular-categories sidebar-widget">
+                        <div class="sidebar-title"><h3>Event Categories</h3></div>
+
+                        <ul class="list">
+                            <li><a href="#">Awareness</a></li>
+                            <li><a href="#">Children Aid</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Life Saving</a></li>
+                            <li><a href="#">Seniors</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Recent Events -->
+                    <div class="widget recent-events sidebar-widget">
+                        <div class="sidebar-title"><h3>RECENT EVENTS</h3></div>
+
+                        <div class="post">
+                            <figure class="post-thumb"><a href="#"><img src="@Url.Content("~/Content/mytemplate/")images/resource/post-thumb-4.jpg" alt=""></a></figure>
+                            <h4><a href="#">Help to get education</a></h4>
+                            <ul class="post-meta clearfix">
+                                <li><a href="#"><span class="icon fa fa-map-marker"></span> Nepal</a></li>
+                                <li><a href="#"><span class="icon fa fa-calendar-o"></span> Aug 08,2016</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post">
+                            <figure class="post-thumb"><a href="#"><img src="@Url.Content("~/Content/mytemplate/")images/resource/post-thumb-5.jpg" alt=""></a></figure>
+                            <h4><a href="#">Education to all</a></h4>
+                            <ul class="post-meta clearfix">
+                                <li><a href="#"><span class="icon fa fa-map-marker"></span> Noida</a></li>
+                                <li><a href="#"><span class="icon fa fa-calendar-o"></span> Aug 11,2016</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="post">
+                            <figure class="post-thumb"><a href="#"><img src="@Url.Content("~/Content/mytemplate/")images/resource/post-thumb-6.jpg" alt=""></a></figure>
+                            <h4><a href="#">Feed for poor</a></h4>
+                            <ul class="post-meta clearfix">
+                                <li><a href="#"><span class="icon fa fa-map-marker"></span> Noida</a></li>
+                                <li><a href="#"><span class="icon fa fa-calendar-o"></span> Aug 23,2016</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Archives -->
+                    <div class="widget archives-categories sidebar-widget">
+                        <div class="sidebar-title"><h3>Archives</h3></div>
+
+                        <ul class="list">
+                            <li><a href="#">Febraury 2016 (7)</a></li>
+                            <li><a href="#">March 2016 (22)</a></li>
+                            <li><a href="#">April 2016 (71)</a></li>
+                            <li><a href="#">May 2016 (17)</a></li>
+                            <li><a href="#">June 2016 (33)</a></li>
+                        </ul>
+
+                    </div>
+
+                </aside>
+            </div><!--End Sidebar-->
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "Donate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Page Title-->
+<section class="page-title" style="background-image:url(@Url.Content("~/Content/mytemplate/")images/background/bg-page-title-1.jpg);">
+    <div class="auto-container">
+        <h1>Donate Now</h1>
+        <div class="bread-crumb-outer">
+            <ul class="bread-crumb clearfix">
+                <li><a href="index-2.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Donation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--Donate Section-->
+<section class="donate-now">
+    <div class="auto-container">
+        <div class="default-form">
+            <form method="post" action="http://wp1.themexlab.com/html2/preview-human-welfare/contact.html">
+                <div class="row clearfix">
+
+                    <!--Left Column-->
+                    <div class="left-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="default-title"><h3>DONATION DETAILS</h3></div>
+                        <div class="row clearfix">
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="field-label">How much would you like to donate?</div>
+                                <div class="select-amount clearfix">
+                                    <div class="select-box"><input type="radio" name="payment-group" id="radio-one"><label for="radio-one">$10</label></div>
+                                    <div class="select-box"><input type="radio" name="payment-group" id="radio-two"><label for="radio-two">$20</label></div>
+                                    <div class="select-box"><input type="radio" name="payment-group" id="radio-three" checked><label for="radio-three">$50</label></div>
+                                    <div class="select-box"><input type="radio" name="payment-group" id="radio-four"><label for="radio-four">$100</label></div>
+                                    <div class="input-box"><input type="text" name="other-payment" value="" placeholder="Enter Your Amount"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="field-label">Would you like to make a regular donation?</div>
+                                <select name="how-many-times">
+                                    <option>One Time</option>
+                                    <option>Two Times</option>
+                                    <option>Three Times</option>
+                                    <option>Four Times</option>
+                                    <option>Five Times</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="field-label">Card Number</div>
+                                <input type="text" name="field-name" value="" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">MM/YY</div>
+                                <input type="text" name="field-name" value="" placeholder="" required>
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">CVC</div>
+                                <input type="text" name="field-name" value="" placeholder="" required>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Right Column-->
+                    <div class="right-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="default-title"><h3>DONOR DETAILS</h3></div>
+                        <div class="row clearfix">
+
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">First Name *</div>
+                                <input type="text" name="field-name" value="" placeholder="" required>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">Last Name</div>
+                                <input type="text" name="field-name" value="" placeholder="">
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">Email *</div>
+                                <input type="email" name="field-name" value="" placeholder="" required>
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <div class="field-label">Phone</div>
+                                <input type="email" name="field-name" value="" placeholder="">
+                            </div>
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="field-label">Address</div>
+                                <textarea name="field-name" placeholder=""></textarea>
+                            </div>
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <button type="submit" class="theme-btn btn-style-three">Submit Donation</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>

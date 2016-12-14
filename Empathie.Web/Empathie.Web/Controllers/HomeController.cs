@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Empathie.Web.Controllers
+namespace EmphatieSelf.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,16 +15,57 @@ namespace Empathie.Web.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+
 
             return View();
         }
 
+        public ActionResult OurTeam()
+        {
+            return View();
+        }
+
+        public ActionResult Causes()
+        {
+            return View();
+        }
+
+        public ActionResult Donate()
+        {
+            return View();
+        }
+
+
+        public ActionResult Events()
+        {
+            return View();
+        }
+
+        public ActionResult FAQS()
+        {
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+
+        public ActionResult ErrorPage()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
+        public ActionResult Volunteer()
+        {
+
+            return View();
+        }
+
     }
 }
