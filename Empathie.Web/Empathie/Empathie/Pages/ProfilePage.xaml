@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Empathie.Pages.ProfilePage"
+             xmlns:local="clr-namespace:Empathie.Custom"
+             Title="Profile"
+             BackgroundColor="#ffffff">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="entryControlStyle" TargetType="Entry">
+        <Setter Property="HorizontalOptions" Value="Fill"/>
+        <Setter Property="PlaceholderColor" Value="#808080"/>
+        <Setter Property="TextColor" Value="Black"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ScrollView>
+    <Grid Padding="20, 30, 20, 20" RowSpacing="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="20" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      
+      <Grid Grid.Row="2" HorizontalOptions="Fill" Padding="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <local:CustomEntry Placeholder="First Name" Style="{StaticResource entryControlStyle}"
+               Grid.Row="0" Grid.Column="1"/>
+      </Grid>
+      <Grid Grid.Row="3" HorizontalOptions="Fill" Padding="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <local:CustomEntry Placeholder="Last Name" Grid.Row="0" Grid.Column="1"
+                           Style="{StaticResource entryControlStyle}"/>
+      </Grid>
+    </Grid>
+  </ScrollView>
+</ContentPage>
