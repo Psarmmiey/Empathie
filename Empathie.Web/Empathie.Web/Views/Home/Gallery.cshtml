@@ -1,22 +1,19 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Gallery";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-  <!--Page Title-->
+<!--Page Title-->
 <section class="page-title" style="background-image:url(@Url.Content("~/Content/mytemplate/")images/background/bg-page-title-1.jpg);">
     <div class="auto-container">
         <h1>Our Gallery</h1>
         <div class="bread-crumb-outer">
             <ul class="bread-crumb clearfix">
-                <li><a href="index-2.html">Home</a></li>
+                <li>@Html.ActionLink("Home", "Index")</li>
                 <li class="active">Gallery</li>
             </ul>
         </div>
     </div>
 </section>
-
 
 <!--Gallery Section-->
 <section class="gallery-section">

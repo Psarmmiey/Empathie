@@ -1,9 +1,8 @@
 ﻿
 @{
     ViewBag.Title = "About Us";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
-
 <div class="page-wrapper">
     <!--Page Title-->
     <section class="page-title" style="background-image:url(@Url.Content("~/Content/mytemplate/")images/background/bg-page-title-1.jpg);">
@@ -11,13 +10,12 @@
             <h1>About Us</h1>
             <div class="bread-crumb-outer">
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index-2.html">Home</a></li>
+                    <li>@Html.ActionLink("Home", "Index")</li>
                     <li class="active">About Us</li>
                 </ul>
             </div>
         </div>
     </section>
-
 
     <!--About Us-->
     <section class="about-us-section">
@@ -88,7 +86,6 @@
         </div>
     </section>
 
-
     <!--What We Think-->
     <section class="what-we-think">
         <div class="auto-container">
@@ -117,7 +114,6 @@
             </div>
         </div>
     </section>
-
 
     <!--Sponsors Section-->
     <section class="sponsors-section-two">

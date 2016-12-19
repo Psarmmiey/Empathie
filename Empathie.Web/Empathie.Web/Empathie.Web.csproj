@@ -348,7 +348,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Causes.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
-    <Content Include="Views\Home\ErrorPage.cshtml" />
+    <Content Include="Views\Shared\ErrorPage.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
     <Content Include="Views\Home\FAQS.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
